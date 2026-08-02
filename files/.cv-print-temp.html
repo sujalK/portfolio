@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujal Khatiwada — CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 14mm 14mm 16mm 14mm;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .sheet {
+    max-width: 190mm;
+    margin: 0 auto;
+  }
+
+  .cv-header {
+    margin-bottom: 1.15rem;
+    padding-bottom: .85rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cv-name {
+    margin: 0 0 .3rem;
+    font-size: 22pt;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .cv-role {
+    margin: 0 0 .45rem;
+    font-size: 10.5pt;
+    font-weight: 500;
+    color: #444;
+  }
+
+  .cv-contacts {
+    margin: 0;
+    font-size: 9.5pt;
+    color: #555;
+  }
+
+  .cv-contacts a {
+    color: #111;
+    text-decoration: none;
+  }
+
+  .cv-sep {
+    margin: 0 .3rem;
+    color: #999;
+  }
+
+  .cv-section {
+    margin-bottom: .95rem;
+  }
+
+  .cv-section-title {
+    margin: 0 0 .4rem;
+    font-size: 9pt;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #b91c1c;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p, li {
+    font-size: 9.6pt;
+    line-height: 1.45;
+    color: #222;
+  }
+
+  p { margin: 0 0 .35rem; }
+
+  ul {
+    margin: 0 0 .35rem;
+    padding-left: 1.1rem;
+  }
+
+  li { margin-bottom: .18rem; }
+
+  .cv-entry,
+  .cv-project {
+    margin-bottom: .7rem;
+  }
+
+  .cv-entry-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .2rem .8rem;
+    margin-bottom: .15rem;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .cv-entry-head h5 {
+    margin: 0;
+    font-size: 10.5pt;
+    font-weight: 700;
+  }
+
+  .cv-entry-date,
+  .cv-entry-meta {
+    font-size: 8.8pt;
+    color: #666;
+  }
+
+  .cv-links {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .cv-links a {
+    color: #111;
+    text-decoration: underline;
+    word-break: break-word;
+  }
+
+  .cv-links i { display: none; }
+
+  a { color: #111; text-decoration: underline; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em;
+  }
+</style>
+</head>
+<body>
+  <main class="sheet">
+<div class="cv-header">
+                    <h3 class="cv-name">Sujal Khatiwada</h3>
+                    <p class="cv-role">Software Engineer | Developer Educator | Curriculum Designer</p>
+                    <p class="cv-contacts">
+                        <a href="mailto:ksujan413@gmail.com">ksujan413@gmail.com</a>
+                        <span class="cv-sep">|</span>
+                        <a href="https://www.linkedin.com/in/sujal-k-0b3b04126/" target="_blank" rel="noopener">LinkedIn</a>
+                        <span class="cv-sep">|</span>
+                        <span>Located in Nepal</span>
+                    </p>
+                </div>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Profile</h4>
+                    <p>
+                        Software engineer with 6+ years of experience building web apps for real clients.
+                        I also design courses and teach programming, and web development with a focus on basics done properly
+                        and learning by building approach to create engaging learning experiences.
+                    </p>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Open Source &amp; Community</h4>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>PHP documentation: issue report (accepted &amp; fixed)</h5>
+                            <span class="cv-entry-date">Feb 2025</span>
+                        </div>
+                        <p>
+                            Found a bad BCMath example on the PHP 8.4 release docs. It broke under
+                            <code>declare(strict_types=1)</code>. I opened an issue on the official docs repo;
+                            the sample was corrected and merged.
+                        </p>
+                        <ul class="cv-links">
+                            <li>
+                                <a href="https://github.com/php/doc-en/issues/4466"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="View PHP documentation issue about BCMath example on GitHub">
+                                    View PHP docs issue on GitHub
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>sujal/validation: PHP validation library</h5>
+                            <span class="cv-entry-date">Open source · MIT</span>
+                        </div>
+                        <p>
+                            A PHP validation library built around reusable Rule classes.
+                            You build an immutable Schema of Fields, hand it to a ValidationEngine,
+                            and get pass/fail results with messages instead of a long chain of if statements.
+                        </p>
+                        <ul>
+                            <li>Built for PHP 8.2+, no framework required.</li>
+                            <li>Rules like Required, Email, Min/Max, Confirmed, Nested paths, and wildcards (e.g. <code>items.*.email</code>).</li>
+                            <li>Designed around SOLID boundaries so new rules are new classes, not engine changes.</li>
+                            <li>Covered with PHPUnit tests (<code>composer test</code>).</li>
+                        </ul>
+                        <p class="cv-entry-meta">
+                            <strong>Stack:</strong> PHP 8.2+, Composer, PHPUnit
+                        </p>
+                        <ul class="cv-links">
+                            <li>
+                                <a href="https://github.com/sujalK/validation"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="View sujal/validation PHP library on GitHub">
+                                    View project on GitHub
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Case Study</h4>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>Online learning platform (New York client)</h5>
+                            <span class="cv-entry-date">Upwork</span>
+                        </div>
+                        <p class="cv-entry-meta">Government school in New York · used daily by hundreds of students</p>
+                        <p>
+                            Built a learning site for a New York client used in a government school. Students practice
+                            languages, science, social studies, and more with vocabularies, audio, visuals, and other
+                            interactive activities: less memorizing, more using what they learn.
+                        </p>
+                        <ul>
+                            <li>Student side for learning, plus a full-featured admin panel to manage content. Some of the features include CSV file uploads, AJAX audio uploads, multi-file drag-and-drop for audio, and bulk photo uploads.</li>
+                            <li>Suggested the learning methods to the client, then coded them into the product.</li>
+                            <li>Hundreds of students use it in class on a normal school day.</li>
+                        </ul>
+                        <p class="cv-entry-meta">
+                            <strong>Stack:</strong> PHP, MySQL, HTML, CSS, JS, jQuery
+                        </p>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Selected Work</h4>
+                    <ul>
+                        <li><strong>Upwork</strong>: 25+ client projects finished, mostly backend, REST APIs, and front-end work.</li>
+                        <li><strong>Udemy</strong>: Course instructor for 43,000+ students, teaching programming from the ground up.</li>
+                        <li><strong>Community workshops</strong>: Gave training through ITSNP (IT Students of Nepal) and Code for Change (Nepal) on JavaScript and problem-solving.</li>
+                    </ul>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Projects</h4>
+                    <ul class="cv-projects">
+                        <li class="cv-project">
+                            <div class="cv-entry-head">
+                                <h5>REST API for an e-commerce store</h5>
+                                <span class="cv-entry-date">Solo project · self-made</span>
+                            </div>
+                            <p>
+                                This one is a store API I built myself: products, cart/checkout, user accounts.
+                                Backend is in PHP, Symfony, and API Platform framework.
+                            </p>
+                            <ul>
+                                <li>Stripe handles card payments; I also added coupon codes.</li>
+                                <li>Product images are stored on AWS S3 instead of the application server.</li>
+                                <li>Auth uses tokens. For access checks I relied on Symfony voters, and I wrote a few custom validators when the built-in ones fell short.</li>
+                                <li>Order confirmations and account emails go out through Symfony Mailer.</li>
+                                <li>In <code>CartRepository</code> I reworked a query that was causing an N+1 issue.</li>
+                                <li>I followed SOLID in places where it helped the code stay easier to change later.</li>
+                            </ul>
+                            <p class="cv-entry-meta">
+                                <strong>Stack:</strong> PHP, MySQL, Symfony, API Platform, HTML, CSS, JS, Stripe, AWS S3, Symfony Mailer
+                            </p>
+                            <ul class="cv-links">
+                                <li>
+                                    <a href="https://github.com/sujalK/ecommerce-api" target="_blank" rel="noopener">
+                                        View project on GitHub
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="cv-project">
+                            <div class="cv-entry-head">
+                                <h5>Service Finder (FindNearMe)</h5>
+                                <span class="cv-entry-date">Solo project · self-made</span>
+                            </div>
+                            <p>
+                                Prototype of an app to find nearby services (for example a salon),
+                                with ratings and basic verification. I wanted local results that feel
+                                more trustworthy than a plain web search. Later I may add certified
+                                staff badges and a live “how busy are they” signal.
+                            </p>
+                            <ul>
+                                <li>Search by name, tags, or location.</li>
+                                <li>Business owners get a panel for listings, photos, map, and email verification.</li>
+                                <li>Users leave reviews and votes. Admins approve listings, manage categories, and handle users.</li>
+                                <li>Core PHP, MySQL, and HTML/CSS/JS (mix of OOP and procedural). I skipped a big framework so I could focus on the product first.</li>
+                            </ul>
+                            <p class="cv-entry-meta">
+                                <strong>Stack:</strong> PHP, MySQL, HTML, CSS, JS, PHPMailer, TinyMCE, Leaflet, Fancybox
+                            </p>
+                            <ul class="cv-links">
+                                <li>
+                                    <a href="https://github.com/sujalK/ServiceFinder" target="_blank" rel="noopener">
+                                        View project on GitHub
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="cv-project">
+                            <div class="cv-entry-head">
+                                <h5>Vue Drive (file manager)</h5>
+                                <span class="cv-entry-date">Solo project · self-made</span>
+                            </div>
+                            <p>
+                                A Google Drive–style app I built to practice Vue end to end:
+                                upload files, nest folders, search, star items, and open recent files.
+                                Frontend is Vue 3 with Vite, Vue Router, and Pinia.
+                                Backend is a small Express API with JWT login/register and Multer for uploads.
+                            </p>
+                            <ul>
+                                <li>Create folders inside folders, rename items, and delete files.</li>
+                                <li>Search and sort files; mark important ones as starred.</li>
+                                <li>Upload with a drop zone and progress UI.</li>
+                                <li>Login and register with hashed passwords and token auth.</li>
+                            </ul>
+                            <p class="cv-entry-meta">
+                                <strong>Stack:</strong> Vue 3, Vite, Pinia, Vue Router, Express, JWT, bcrypt, Multer, Axios
+                            </p>
+                            <ul class="cv-links">
+                                <li>
+                                    <a href="https://github.com/sujalK/vue-drive" target="_blank" rel="noopener">
+                                        View project on GitHub
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="cv-project">
+                            <div class="cv-entry-head">
+                                <h5>2feat.com</h5>
+                                <span class="cv-entry-date">Frontend only · team project</span>
+                            </div>
+                            <p>
+                                On
+                                <a href="https://2feat.com" target="_blank" rel="noopener">2feat.com</a>
+                                my job was the custom HTML/CSS/JS. When that was done I handed it over.
+                                React was someone else’s lane.
+                            </p>
+                            <ul>
+                                <li>Got the markup and scripts ready for the rest of the team.</li>
+                                <li>Sat with React + backend folks when they plugged things together.</li>
+                            </ul>
+                            <p class="cv-entry-meta">
+                                <strong>Stack:</strong> HTML, CSS, JS &nbsp;|&nbsp; React: other teammates
+                            </p>
+                            <ul class="cv-links">
+                                <li>
+                                    <a href="https://2feat.com" target="_blank" rel="noopener">
+                                        Visit 2feat.com
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Professional Experience</h4>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>Freelance Software Developer at Upwork</h5>
+                            <span class="cv-entry-date">Aug 2020 to Present</span>
+                        </div>
+                        <ul>
+                            <li>Completed 25+ projects for clients: backend work, REST APIs, and responsive UIs.</li>
+                            <li>Write code with OOP, SOLID, dependency injection, and clean structure when the project needs it.</li>
+                            <li>Integrated tools like Stripe and Symfony Mailer in live apps.</li>
+                            <li>Use PHPUnit for unit tests and also test REST APIs end to end before handing work over.</li>
+                            <li>On team jobs I collect requirements, clear up scope, and keep handoffs tidy with remote teammates.</li>
+                            <li>Talk directly with clients abroad about what to build and how to ship it.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Teaching &amp; Curriculum Design Experience</h4>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>Software Engineering Instructor &amp; Curriculum Designer</h5>
+                            <span class="cv-entry-date">2018 – Present</span>
+                        </div>
+                        <p class="cv-entry-meta">Independent / Online &amp; Community Platforms</p>
+                        <ul>
+                            <li>Write courses that start with fundamentals and push students to solve real problems.</li>
+                            <li>Teach mixed ages, including school kids: from first programs to full projects.</li>
+                            <li>Build lesson paths that get harder over time so people don’t get stuck or bored.</li>
+                            <li>Coach learners on how software is actually built and delivered in practice.</li>
+                        </ul>
+                    </div>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>Udemy Instructor</h5>
+                        </div>
+                        <ul>
+                            <li>43,000+ students in 150+ countries.</li>
+                            <li>Main course is programming basics: lots of examples, not much fluff.</li>
+                            <li>Reviews usually say the teaching is easy to follow. That’s what I’m aiming for.</li>
+                        </ul>
+                    </div>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>Community &amp; Local Organization Teaching</h5>
+                        </div>
+                        <ul>
+                            <li><strong>Code for Change (Nepal)</strong>: Ran JS workshops in Kathmandu. Mix of interactive sessions and hands-on coding sessions.</li>
+                            <li><strong>IT Students of Nepal</strong>: Sessions on JavaScript on a LIVE workshop of 1 month duration.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Education</h4>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>London Metropolitan University: BSc (Hons.) Computing</h5>
+                            <span class="cv-entry-date">2023</span>
+                        </div>
+                        <p class="cv-entry-meta">First Class Honours</p>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Technical Skills</h4>
+                    <ul class="cv-skills">
+                        <li><strong>Backend:</strong> PHP, Symfony, API Platform, MySQL, REST APIs, Doctrine ORM, Stripe payment integration, Symfony Mailer</li>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript (Vanilla), Vue.js, Responsive UI Design</li>
+                        <li><strong>Testing:</strong> PHPUnit (unit testing), functional testing of REST APIs</li>
+                        <li><strong>Core Concepts:</strong> SOLID principles, OOP, Design Patterns, Dependency Injection</li>
+                        <li><strong>Tools:</strong> Git, GitHub, Composer, Linux Command Line</li>
+                    </ul>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Soft Skills</h4>
+                    <ul class="cv-skills">
+                        <li><strong>Collaboration:</strong> Asking the right questions up front, remote work, client calls, handing work across cleanly</li>
+                        <li><strong>Teaching &amp; training:</strong> Workshops, lesson writing, making sure people can still use the skill a month later</li>
+                        <li><strong>Communication:</strong> I can talk to a beginner or a senior without switching into buzzword mode</li>
+                        <li><strong>Mentorship:</strong> Freshers and switchers usually need a map, not another random YouTube playlist</li>
+                        <li><strong>Problem-solving:</strong> Turn unclear requests into working software</li>
+                    </ul>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Languages</h4>
+                    <ul class="cv-skills">
+                        <li><strong>Nepali:</strong> Native language</li>
+                        <li><strong>English:</strong> Professional level, both writing and speaking/communication</li>
+                        <li><strong>Hindi:</strong> Good communication skill</li>
+                        <li><strong>Bhojpuri:</strong> Fluent</li>
+                        <li><strong>Bajika:</strong> Speaks and understands</li>
+                        <li><strong>Maithili:</strong> Basic to intermediate understanding; limited speaking exposure</li>
+                    </ul>
+                </section>
+
+                <section class="cv-section">
+                    <h4 class="cv-section-title">Links</h4>
+                    <ul class="cv-links">
+                        <li>
+                            <a href="https://www.udemy.com/user/sujal-12/" target="_blank" rel="noopener">
+                                Udemy Instructor Profile
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.upwork.com/freelancers/~01d616780dda5599a9" target="_blank" rel="noopener">
+                                Upwork Freelance Profile
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sujal-k-0b3b04126/" target="_blank" rel="noopener">
+                                LinkedIn Profile
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sujalK" target="_blank" rel="noopener">
+                                GitHub Repository
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujal Khatiwada (PHP Developer Advocate) Resume</title>
+<style>
+  @page { size: A4; margin: 12mm 12mm 14mm 12mm; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .sheet { max-width: 190mm; margin: 0 auto; }
+  .header { margin-bottom: 0.85rem; padding-bottom: 0.7rem; border-bottom: 1.5px solid #ddd; }
+  .name { margin: 0 0 0.2rem; font-size: 20pt; font-weight: 800; line-height: 1.15; }
+  .role { margin: 0 0 0.35rem; font-size: 10.5pt; font-weight: 600; color: #b91c1c; }
+  .contacts { margin: 0; font-size: 9pt; color: #444; }
+  .contacts a { color: #111; text-decoration: none; }
+  .sep { margin: 0 0.28rem; color: #999; }
+  .section { margin-bottom: 0.75rem; }
+  .section-title {
+    margin: 0 0 0.35rem;
+    font-size: 8.5pt;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #b91c1c;
+  }
+  p, li { font-size: 9.2pt; line-height: 1.4; color: #222; }
+  p { margin: 0 0 0.3rem; }
+  ul { margin: 0 0 0.3rem; padding-left: 1.05rem; }
+  li { margin-bottom: 0.15rem; }
+  .entry { margin-bottom: 0.55rem; }
+  .entry-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.15rem 0.7rem;
+    margin-bottom: 0.12rem;
+  }
+  .entry-head h3 { margin: 0; font-size: 10pt; font-weight: 700; }
+  .date, .meta { font-size: 8.4pt; color: #666; }
+  .meta { margin: 0 0 0.2rem; }
+  a { color: #111; text-decoration: underline; }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem 1.2rem;
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <header class="header">
+    <h1 class="name">Sujal Khatiwada</h1>
+    <p class="role">PHP Engineer · Developer Educator · Community Trainer</p>
+    <p class="contacts">
+      <a href="mailto:ksujan413@gmail.com">ksujan413@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="https://www.linkedin.com/in/sujal-k-0b3b04126/">LinkedIn</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/sujalK">GitHub</a>
+      <span class="sep">|</span>
+      Located in Nepal · Available for remote work
+    </p>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Profile</h2>
+    <p>
+      Software engineer with 6+ years building web apps and REST APIs, mostly in PHP.
+      I also write courses and teach programming online and in workshops, with a focus on
+      basics done properly and learning by building. I spend a lot of time explaining technical
+      ideas in plain language, whether that is to beginners or to people already writing code.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Open Source / Docs</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Official PHP docs: issue on the official docs repo</h3>
+        <span class="date">Feb 2025</span>
+      </div>
+      <p>
+        Found a bad BCMath example on the PHP 8.4 release docs. It broke under
+        <code>declare(strict_types=1)</code>. I opened an issue on the official PHP docs repo;
+        the sample was corrected and merged.
+        <a href="https://github.com/php/doc-en/issues/4466">github.com/php/doc-en/issues/4466</a>
+      </p>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>sujal/validation: PHP validation library</h3>
+        <span class="date">Open source · MIT</span>
+      </div>
+      <p>
+        A PHP validation library built around reusable Rule classes.
+        Immutable Schema of Fields, PHP 8.2+, no framework required, PHPUnit tests included.
+        Built so new rules are new classes, not changes to the engine.
+        <a href="https://github.com/sujalK/validation">github.com/sujalK/validation</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Why this role</h2>
+    <ul>
+      <li>Day-to-day work is PHP and APIs: Symfony, API Platform, REST, Composer, GitHub.</li>
+      <li>I started teaching on Udemy in 2018. That course now has 43,000+ students in 150+ countries.</li>
+      <li>Invited to run JavaScript workshops for <a href="https://www.facebook.com/groups/itsnporg">ITSNP</a> and <a href="https://www.facebook.com/CodeForChangeNepal/">Code for Change</a> in Nepal.</li>
+      <li>I write short posts and videos in developer groups on LinkedIn and Facebook, mostly about PHP, Symfony, JavaScript, and how I think about software design.</li>
+      <li>I notice when docs or examples are wrong. See the PHP docs issue above.</li>
+      <li>Most of my freelance work has been remote, with clients outside Nepal.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Developer Education &amp; Community</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Udemy Instructor</h3>
+        <span class="date">Ongoing</span>
+      </div>
+      <ul>
+        <li>43,000+ students in 150+ countries. The course starts from programming basics and works up with practical examples.</li>
+        <li>I plan lessons so people get past “hello world” and into solving actual problems.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Software Engineering Instructor &amp; Curriculum Designer</h3>
+        <span class="date">2018 – Present</span>
+      </div>
+      <ul>
+        <li>Write and teach courses for mixed groups: people new to code, and people switching careers.</li>
+        <li>I try to show how software is actually built and shipped, not only language syntax.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Community Workshops</h3>
+      </div>
+      <ul>
+        <li><strong><a href="https://www.facebook.com/groups/itsnporg">IT Students of Nepal (ITSNP)</a>:</strong> Invited to train a one-month live JavaScript workshop.</li>
+        <li><strong><a href="https://www.facebook.com/CodeForChangeNepal/">Code for Change (Nepal)</a>:</strong> Ran hands-on JavaScript workshops in Kathmandu. They asked me back more than once.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>LinkedIn posts related to PHP (hands-on coding)</h3>
+      </div>
+      <p>
+        Picked work to showcase relevant hands-on PHP examples and practical use cases of various design patterns.
+        The links below open the actual posts on LinkedIn.
+      </p>
+      <ul>
+        <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7344085766219681793/">How modern PHP frameworks use the Builder Pattern</a></li>
+        <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7346369972400439296/">Observer Pattern in Symfony (CompilerPass + SOLID)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Selected Technical Experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Freelance Software Developer, Upwork</h3>
+        <span class="date">Aug 2020 – Present</span>
+      </div>
+      <ul>
+        <li>25+ client projects finished, mostly backend, REST APIs, and front-end work.</li>
+        <li>Talk directly with clients abroad about what to build, when it ships, and how handoff works.</li>
+        <li>I run PHPUnit and end-to-end API checks before I mark something done.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Case study: Online learning platform (New York client)</h3>
+        <span class="date">Upwork</span>
+      </div>
+      <p class="meta">Government school in New York · used daily by hundreds of students</p>
+      <ul>
+        <li>Built a PHP learning site students use in class, plus an admin panel so staff can manage the content.</li>
+        <li>Suggested the learning methods to the client, then coded them into the product.</li>
+      </ul>
+      <p class="meta"><strong>Stack:</strong> PHP, MySQL, HTML, CSS, JS, jQuery</p>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>REST API for an e-commerce store</h3>
+        <span class="date">Solo project</span>
+      </div>
+      <p>
+        Store API I built myself: products, cart/checkout, user accounts.
+        Backend is PHP, Symfony, and API Platform. Token auth, Stripe payments,
+        images on AWS S3, and order/account emails through Symfony Mailer.
+        <a href="https://github.com/sujalK/ecommerce-api">github.com/sujalK/ecommerce-api</a>
+      </p>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Vue Drive (file manager)</h3>
+        <span class="date">Solo project</span>
+      </div>
+      <p>
+        Google Drive–style app: upload files, nest folders, search, star items, and browse recent files.
+        Vue 3 frontend (Vite, Vue Router, Pinia) with an Express API for JWT auth and Multer uploads.
+        <a href="https://github.com/sujalK/vue-drive">github.com/sujalK/vue-drive</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <ul>
+      <li><strong>PHP &amp; APIs:</strong> PHP, Symfony, API Platform, REST APIs, Doctrine ORM, Composer</li>
+      <li><strong>Web:</strong> HTML, CSS, JavaScript, Vue.js, responsive UI</li>
+      <li><strong>Testing &amp; tools:</strong> PHPUnit, functional API testing, Git / GitHub</li>
+      <li><strong>Teaching side:</strong> courses, workshops, video posts, and writing in developer groups on LinkedIn and Facebook</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>London Metropolitan University, BSc (Hons.) Computing</h3>
+        <span class="date">2023</span>
+      </div>
+      <p class="meta">Graduated with First Class Honours</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Languages</h2>
+    <ul>
+      <li>Nepali (Native)</li>
+      <li>English (Professional)</li>
+      <li>Hindi (Good communication)</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Links</h2>
+    <ul>
+      <li>Udemy: <a href="https://www.udemy.com/user/sujal-12/">udemy.com/user/sujal-12</a></li>
+      <li>Upwork: <a href="https://www.upwork.com/freelancers/~01d616780dda5599a9">Upwork profile</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/sujal-k-0b3b04126/">linkedin.com/in/sujal-k-0b3b04126</a></li>
+      <li>GitHub: <a href="https://github.com/sujalK">github.com/sujalK</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

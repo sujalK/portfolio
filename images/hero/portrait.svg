@@ -1,0 +1,43 @@
+<svg width="420" height="520" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="shirt" x1="60" y1="330" x2="360" y2="520" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#B9AEF5"/>
+            <stop offset="1" stop-color="#8E7FE8"/>
+        </linearGradient>
+        <linearGradient id="skin" x1="150" y1="90" x2="290" y2="300" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F4CBA6"/>
+            <stop offset="1" stop-color="#E0A87C"/>
+        </linearGradient>
+        <clipPath id="frame">
+            <rect width="420" height="520" rx="0"/>
+        </clipPath>
+    </defs>
+
+    <g clip-path="url(#frame)">
+        <!-- torso -->
+        <path d="M210 300c66 0 96 34 108 74 9 30 14 96 14 146H88c0-50 5-116 14-146 12-40 42-74 108-74Z" fill="url(#shirt)"/>
+        <!-- collar shadow -->
+        <path d="M176 306c10 20 22 30 34 30s24-10 34-30c-10-6-21-9-34-9s-24 3-34 9Z" fill="#7E6FDB"/>
+        <!-- neck -->
+        <path d="M186 246h48v52c0 12-11 20-24 20s-24-8-24-20v-52Z" fill="#E0A87C"/>
+        <!-- head -->
+        <path d="M210 78c40 0 66 28 66 70 0 20-4 40-12 56-10 20-30 34-54 34s-44-14-54-34c-8-16-12-36-12-56 0-42 26-70 66-70Z" fill="url(#skin)"/>
+        <!-- ears -->
+        <ellipse cx="145" cy="176" rx="9" ry="14" fill="#E0A87C"/>
+        <ellipse cx="275" cy="176" rx="9" ry="14" fill="#E0A87C"/>
+        <!-- hair -->
+        <path d="M210 62c44 0 70 26 70 62 0 8-1 15-3 22-4-16-10-26-19-32-14-10-30-6-48-6s-34-4-48 6c-9 6-15 16-19 32-2-7-3-14-3-22 0-36 26-62 70-62Z" fill="#1F1B18"/>
+        <!-- beard -->
+        <path d="M156 186c2 30 10 52 24 66 9 9 19 14 30 14s21-5 30-14c14-14 22-36 24-66-6 18-16 26-28 28-9 2-17 2-26 2s-17 0-26-2c-12-2-22-10-28-28Z" fill="#26211D"/>
+        <!-- brows -->
+        <rect x="172" y="150" width="26" height="6" rx="3" fill="#1F1B18"/>
+        <rect x="222" y="150" width="26" height="6" rx="3" fill="#1F1B18"/>
+        <!-- eyes -->
+        <circle cx="185" cy="168" r="5" fill="#241F1B"/>
+        <circle cx="235" cy="168" r="5" fill="#241F1B"/>
+        <!-- nose -->
+        <path d="M210 176v20c0 3-3 5-7 6" stroke="#C98F63" stroke-width="4" stroke-linecap="round"/>
+        <!-- smile -->
+        <path d="M192 214c6 8 12 11 18 11s12-3 18-11" stroke="#8C4A38" stroke-width="5" stroke-linecap="round"/>
+    </g>
+</svg>

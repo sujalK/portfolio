@@ -1,0 +1,5 @@
+# Allow all crawlers to index the site
+User-agent: *
+Allow: /
+
+# Disallow nothing — portfolio pages are public

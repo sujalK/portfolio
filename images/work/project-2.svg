@@ -1,0 +1,93 @@
+<svg width="420" height="480" viewBox="0 0 420 480" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <linearGradient id="finderBg" x1="18" y1="18" x2="402" y2="462" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#081C24"/>
+            <stop offset=".58" stop-color="#123D49"/>
+            <stop offset="1" stop-color="#1B7F7A"/>
+        </linearGradient>
+        <linearGradient id="finderAccent" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#FB7185"/>
+            <stop offset="1" stop-color="#F97316"/>
+        </linearGradient>
+        <filter id="finderShadow" x="-20%" y="-20%" width="140%" height="150%">
+            <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#041114" flood-opacity=".35"/>
+        </filter>
+    </defs>
+
+    <rect width="420" height="480" rx="26" fill="url(#finderBg)"/>
+    <circle cx="398" cy="48" r="124" fill="#47D7C7" opacity=".09"/>
+    <circle cx="10" cy="452" r="150" fill="#F97316" opacity=".08"/>
+
+    <!-- app window -->
+    <g transform="translate(34 34)">
+        <rect width="352" height="412" rx="19" fill="#F8FAFA" filter="url(#finderShadow)"/>
+        <rect x="1" y="1" width="350" height="410" rx="18" stroke="#FFFFFF" stroke-opacity=".45"/>
+
+        <!-- navigation -->
+        <circle cx="26" cy="27" r="10" fill="url(#finderAccent)"/>
+        <path d="M22 27a4 4 0 1 1 8 0c0 3-4 7-4 7s-4-4-4-7Z" fill="#FFFFFF"/>
+        <circle cx="26" cy="27" r="1.5" fill="#F97316"/>
+        <text x="43" y="31" fill="#102A33" font-size="11" font-weight="700" font-family="Arial, sans-serif">ServiceFinder</text>
+        <rect x="263" y="20" width="68" height="20" rx="10" fill="#102A33"/>
+        <text x="279" y="33.5" fill="#FFFFFF" font-size="8" font-weight="700" font-family="Arial, sans-serif">Add listing</text>
+
+        <!-- search -->
+        <rect x="20" y="61" width="312" height="45" rx="12" fill="#FFFFFF" stroke="#DCE7E7"/>
+        <circle cx="39" cy="83" r="6" stroke="#6B7F84" stroke-width="1.5"/>
+        <path d="M43.5 87.5 48 92" stroke="#6B7F84" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="58" y="87" fill="#7B8D91" font-size="9" font-family="Arial, sans-serif">Search services, tags or location</text>
+        <rect x="277" y="70" width="45" height="27" rx="8" fill="url(#finderAccent)"/>
+        <text x="288" y="87" fill="#FFFFFF" font-size="8" font-weight="700" font-family="Arial, sans-serif">Find</text>
+
+        <!-- map -->
+        <rect x="20" y="120" width="144" height="169" rx="13" fill="#DCEDE9"/>
+        <path d="M20 172c31-16 50 4 78-5 24-8 39-31 66-24M20 241c35 8 52-16 79-8 21 7 35 25 65 19" stroke="#B6D3CD" stroke-width="7"/>
+        <path d="M57 120c-3 31 22 45 19 76-3 29-24 51-18 93M126 120c7 24-12 40-6 64 6 26 29 42 24 72" stroke="#C4DCD7" stroke-width="5"/>
+        <g>
+            <path d="M60 163c0-8 6-14 14-14s14 6 14 14c0 11-14 26-14 26s-14-15-14-26Z" fill="#E84A4A"/>
+            <circle cx="74" cy="163" r="5" fill="#FFFFFF"/>
+            <path d="M112 221c0-7 6-13 13-13s13 6 13 13c0 10-13 24-13 24s-13-14-13-24Z" fill="#F97316"/>
+            <circle cx="125" cy="221" r="4.5" fill="#FFFFFF"/>
+        </g>
+
+        <!-- service result cards -->
+        <rect x="176" y="120" width="156" height="78" rx="12" fill="#FFFFFF" stroke="#E3EBEA"/>
+        <rect x="188" y="132" width="42" height="42" rx="10" fill="#FFE7DE"/>
+        <path d="M199 154h20M209 144v20" stroke="#E84A4A" stroke-width="3" stroke-linecap="round"/>
+        <text x="240" y="145" fill="#102A33" font-size="9" font-weight="700" font-family="Arial, sans-serif">City Health Clinic</text>
+        <text x="240" y="160" fill="#7B8D91" font-size="7.5" font-family="Arial, sans-serif">Healthcare · 1.2 km</text>
+        <text x="240" y="178" fill="#F59E0B" font-size="9" font-weight="700" font-family="Arial, sans-serif">★★★★★</text>
+
+        <rect x="176" y="211" width="156" height="78" rx="12" fill="#FFFFFF" stroke="#E3EBEA"/>
+        <rect x="188" y="223" width="42" height="42" rx="10" fill="#DDF5F0"/>
+        <path d="M198 252h22v-14h-22v14Zm5-14v-6h12v6" stroke="#168A7D" stroke-width="2" stroke-linejoin="round"/>
+        <text x="240" y="236" fill="#102A33" font-size="9" font-weight="700" font-family="Arial, sans-serif">FixPro Services</text>
+        <text x="240" y="251" fill="#7B8D91" font-size="7.5" font-family="Arial, sans-serif">Home repair · 2.8 km</text>
+        <text x="240" y="269" fill="#F59E0B" font-size="9" font-weight="700" font-family="Arial, sans-serif">★★★★☆</text>
+
+        <!-- feature pills -->
+        <rect x="20" y="312" width="96" height="41" rx="10" fill="#EDF5F3"/>
+        <circle cx="39" cy="332.5" r="8" fill="#168A7D"/>
+        <path d="m35 332 3 3 5-6" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="53" y="336" fill="#31545A" font-size="8" font-weight="700" font-family="Arial, sans-serif">Verified</text>
+
+        <rect x="128" y="312" width="96" height="41" rx="10" fill="#FFF0EA"/>
+        <circle cx="147" cy="332.5" r="8" fill="#F97316"/>
+        <path d="M143 333h8M147 329v8" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+        <text x="161" y="336" fill="#7B4433" font-size="8" font-weight="700" font-family="Arial, sans-serif">Listings</text>
+
+        <rect x="236" y="312" width="96" height="41" rx="10" fill="#F1ECFA"/>
+        <circle cx="255" cy="332.5" r="8" fill="#777BB4"/>
+        <path d="M251 330h8M251 334h6" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="269" y="336" fill="#514D78" font-size="8" font-weight="700" font-family="Arial, sans-serif">Reviews</text>
+
+        <rect x="20" y="370" width="75" height="22" rx="7" fill="#777BB4" fill-opacity=".15"/>
+        <text x="42" y="385" fill="#625F99" font-size="9" font-weight="700" font-family="Arial, sans-serif">PHP 8</text>
+        <rect x="103" y="370" width="75" height="22" rx="7" fill="#168A7D" fill-opacity=".12"/>
+        <text x="126" y="385" fill="#16766D" font-size="9" font-weight="700" font-family="Arial, sans-serif">MySQL</text>
+        <rect x="186" y="370" width="91" height="22" rx="7" fill="#F59E0B" fill-opacity=".14"/>
+        <text x="207" y="385" fill="#B76A09" font-size="9" font-weight="700" font-family="Arial, sans-serif">JavaScript</text>
+        <rect x="285" y="370" width="47" height="22" rx="7" fill="#3B82F6" fill-opacity=".12"/>
+        <text x="296" y="385" fill="#2563AA" font-size="9" font-weight="700" font-family="Arial, sans-serif">Maps</text>
+    </g>
+</svg>

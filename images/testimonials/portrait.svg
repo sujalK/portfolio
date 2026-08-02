@@ -1,0 +1,37 @@
+<svg width="300" height="380" viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="jacket" x1="40" y1="230" x2="260" y2="380" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2F62C4"/>
+            <stop offset="1" stop-color="#1D3F8F"/>
+        </linearGradient>
+        <linearGradient id="face" x1="105" y1="60" x2="205" y2="215" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F6D0AC"/>
+            <stop offset="1" stop-color="#E3AE84"/>
+        </linearGradient>
+    </defs>
+
+    <!-- jacket -->
+    <path d="M150 212c48 0 70 24 79 53 6 21 11 70 11 115H60c0-45 5-94 11-115 9-29 31-53 79-53Z" fill="url(#jacket)"/>
+    <!-- shirt -->
+    <path d="M124 216h52l-12 40h-28l-12-40Z" fill="#F7F7F7"/>
+    <path d="M150 256l16-40 12 8-20 46-20-46 12-8 16 40Z" fill="#FFFFFF"/>
+    <!-- neck -->
+    <path d="M133 172h34v40c0 9-8 15-17 15s-17-6-17-15v-40Z" fill="#E3AE84"/>
+    <!-- head -->
+    <path d="M150 52c30 0 49 21 49 52 0 15-3 30-9 42-8 15-23 25-40 25s-32-10-40-25c-6-12-9-27-9-42 0-31 19-52 49-52Z" fill="url(#face)"/>
+    <!-- ears -->
+    <ellipse cx="102" cy="125" rx="7" ry="11" fill="#E3AE84"/>
+    <ellipse cx="198" cy="125" rx="7" ry="11" fill="#E3AE84"/>
+    <!-- hair -->
+    <path d="M150 40c33 0 52 19 52 46 0 6-1 11-2 16-3-12-8-19-14-24-11-7-23-4-36-4s-25-3-36 4c-6 5-11 12-14 24-1-5-2-10-2-16 0-27 19-46 52-46Z" fill="#2A2320"/>
+    <!-- beard -->
+    <path d="M108 133c2 22 8 38 18 48 7 7 15 11 24 11s17-4 24-11c10-10 16-26 18-48-5 13-12 19-21 21-7 1-14 1-21 1s-14 0-21-1c-9-2-16-8-21-21Z" fill="#332B26"/>
+    <!-- brows -->
+    <rect x="120" y="108" width="20" height="5" rx="2.5" fill="#2A2320"/>
+    <rect x="160" y="108" width="20" height="5" rx="2.5" fill="#2A2320"/>
+    <!-- eyes -->
+    <circle cx="130" cy="122" r="4" fill="#2A2320"/>
+    <circle cx="170" cy="122" r="4" fill="#2A2320"/>
+    <!-- smile -->
+    <path d="M136 156c5 6 9 9 14 9s9-3 14-9" stroke="#8C4A38" stroke-width="4" stroke-linecap="round"/>
+</svg>

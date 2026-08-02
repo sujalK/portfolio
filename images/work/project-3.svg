@@ -1,0 +1,67 @@
+<svg width="420" height="480" viewBox="0 0 420 480" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <linearGradient id="valBg" x1="20" y1="16" x2="400" y2="464" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0B1220"/>
+            <stop offset="0.55" stop-color="#1E3A5F"/>
+            <stop offset="1" stop-color="#B91C1C"/>
+        </linearGradient>
+        <linearGradient id="valAccent" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#FB7185"/>
+            <stop offset="1" stop-color="#F97316"/>
+        </linearGradient>
+        <filter id="valShadow" x="-20%" y="-20%" width="140%" height="150%">
+            <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#060A12" flood-opacity=".32"/>
+        </filter>
+    </defs>
+
+    <rect width="420" height="480" rx="26" fill="url(#valBg)"/>
+    <circle cx="392" cy="52" r="122" fill="#FB7185" opacity=".14"/>
+    <circle cx="18" cy="448" r="146" fill="#777BB4" opacity=".14"/>
+
+    <g transform="translate(34 34)">
+        <rect width="352" height="412" rx="19" fill="#121820" filter="url(#valShadow)"/>
+        <rect x="1" y="1" width="350" height="410" rx="18" stroke="#FFFFFF" stroke-opacity=".12"/>
+
+        <circle cx="24" cy="25" r="5" fill="#EF4444"/>
+        <circle cx="42" cy="25" r="5" fill="#F59E0B"/>
+        <circle cx="60" cy="25" r="5" fill="#22C55E"/>
+        <rect x="89" y="19" width="174" height="12" rx="6" fill="#FFFFFF" fill-opacity=".08"/>
+        <path d="M0 51H352" stroke="#FFFFFF" stroke-opacity=".1"/>
+
+        <text x="22" y="82" fill="#FFFFFF" font-size="14" font-weight="800" font-family="Arial, sans-serif">sujal/validation</text>
+        <rect x="248" y="64" width="82" height="22" rx="11" fill="#22C55E" fill-opacity=".18"/>
+        <text x="264" y="79" fill="#86EFAC" font-size="10" font-weight="700" font-family="Arial, sans-serif">passed</text>
+
+        <rect x="22" y="98" width="308" height="86" rx="12" fill="#FFFFFF" fill-opacity=".05"/>
+        <text x="38" y="124" fill="#FFFFFF" fill-opacity=".55" font-size="10" font-weight="700" font-family="Arial, sans-serif">SCHEMA</text>
+        <text x="38" y="146" fill="#FFFFFF" font-size="12" font-weight="700" font-family="Arial, sans-serif">Field::named('email')</text>
+        <text x="38" y="166" fill="#C4B5FD" font-size="11" font-weight="600" font-family="Arial, sans-serif">-&gt;rules(new Required(), new Email())</text>
+
+        <rect x="22" y="198" width="148" height="68" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <rect x="36" y="212" width="54" height="20" rx="6" fill="#22C55E" fill-opacity=".2"/>
+        <text x="45" y="226" fill="#86EFAC" font-size="10" font-weight="700" font-family="Arial, sans-serif">Required</text>
+        <rect x="36" y="242" width="96" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".12"/>
+
+        <rect x="182" y="198" width="148" height="68" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <rect x="196" y="212" width="44" height="20" rx="6" fill="#3B82F6" fill-opacity=".2"/>
+        <text x="205" y="226" fill="#93C5FD" font-size="10" font-weight="700" font-family="Arial, sans-serif">Email</text>
+        <rect x="196" y="242" width="96" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".12"/>
+
+        <rect x="22" y="280" width="148" height="68" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <rect x="36" y="294" width="38" height="20" rx="6" fill="#F59E0B" fill-opacity=".2"/>
+        <text x="46" y="308" fill="#FCD34D" font-size="10" font-weight="700" font-family="Arial, sans-serif">Min</text>
+        <rect x="36" y="324" width="96" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".12"/>
+
+        <rect x="182" y="280" width="148" height="68" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <rect x="196" y="294" width="72" height="20" rx="6" fill="#FB7185" fill-opacity=".2"/>
+        <text x="205" y="308" fill="#FDA4AF" font-size="10" font-weight="700" font-family="Arial, sans-serif">Confirmed</text>
+        <rect x="196" y="324" width="96" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".12"/>
+
+        <rect x="22" y="364" width="90" height="36" rx="10" fill="#777BB4" fill-opacity=".22"/>
+        <text x="47" y="387" fill="#C4B5FD" font-size="14" font-weight="800" font-family="Arial, sans-serif">PHP</text>
+        <rect x="122" y="364" width="98" height="36" rx="10" fill="#FFFFFF" fill-opacity=".06"/>
+        <text x="140" y="387" fill="#FFFFFF" font-size="12" font-weight="700" font-family="Arial, sans-serif">Composer</text>
+        <rect x="230" y="364" width="100" height="36" rx="10" fill="#FFFFFF" fill-opacity=".06"/>
+        <text x="248" y="387" fill="#FFFFFF" font-size="12" font-weight="700" font-family="Arial, sans-serif">PHPUnit</text>
+    </g>
+</svg>

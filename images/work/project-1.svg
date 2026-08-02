@@ -1,0 +1,59 @@
+<svg width="420" height="480" viewBox="0 0 420 480" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <linearGradient id="apiBg" x1="22" y1="18" x2="398" y2="462" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#24080D"/>
+            <stop offset="0.55" stop-color="#641424"/>
+            <stop offset="1" stop-color="#E04D39"/>
+        </linearGradient>
+        <linearGradient id="apiAccent" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#FB7185"/>
+            <stop offset="1" stop-color="#F97316"/>
+        </linearGradient>
+        <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="150%">
+            <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#130306" flood-opacity=".28"/>
+        </filter>
+    </defs>
+    <rect width="420" height="480" rx="26" fill="url(#apiBg)"/>
+    <circle cx="388" cy="54" r="118" fill="#FB7185" opacity=".13"/>
+    <circle cx="24" cy="444" r="142" fill="#F97316" opacity=".11"/>
+
+    <g transform="translate(34 34)">
+        <rect width="352" height="412" rx="19" fill="#151515" filter="url(#cardShadow)"/>
+        <rect x="1" y="1" width="350" height="410" rx="18" stroke="#FFFFFF" stroke-opacity=".12"/>
+
+        <circle cx="24" cy="25" r="5" fill="#EF4444"/>
+        <circle cx="42" cy="25" r="5" fill="#F59E0B"/>
+        <circle cx="60" cy="25" r="5" fill="#22C55E"/>
+        <rect x="89" y="19" width="174" height="12" rx="6" fill="#FFFFFF" fill-opacity=".08"/>
+        <path d="M0 51H352" stroke="#FFFFFF" stroke-opacity=".1"/>
+
+        <rect x="22" y="75" width="308" height="70" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <rect x="38" y="91" width="45" height="20" rx="6" fill="#22C55E" fill-opacity=".2"/>
+        <text x="50" y="105" fill="#86EFAC" font-size="10" font-weight="700" font-family="Arial, sans-serif">GET</text>
+        <text x="96" y="105" fill="#FFFFFF" font-size="11" font-weight="700" font-family="Arial, sans-serif">/api/products</text>
+        <rect x="38" y="123" width="222" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".11"/>
+        <circle cx="306" cy="101" r="8" fill="url(#apiAccent)"/>
+
+        <rect x="22" y="158" width="308" height="70" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <rect x="38" y="174" width="45" height="20" rx="6" fill="#3B82F6" fill-opacity=".2"/>
+        <text x="45" y="188" fill="#93C5FD" font-size="10" font-weight="700" font-family="Arial, sans-serif">POST</text>
+        <text x="96" y="188" fill="#FFFFFF" font-size="11" font-weight="700" font-family="Arial, sans-serif">/api/orders</text>
+        <rect x="38" y="206" width="188" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".11"/>
+        <circle cx="306" cy="184" r="8" fill="url(#apiAccent)"/>
+
+        <rect x="22" y="241" width="308" height="70" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <rect x="38" y="257" width="45" height="20" rx="6" fill="#F59E0B" fill-opacity=".2"/>
+        <text x="42" y="271" fill="#FCD34D" font-size="10" font-weight="700" font-family="Arial, sans-serif">PATCH</text>
+        <text x="96" y="271" fill="#FFFFFF" font-size="11" font-weight="700" font-family="Arial, sans-serif">/api/apply-discount</text>
+        <rect x="38" y="289" width="244" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".11"/>
+        <circle cx="306" cy="267" r="8" fill="url(#apiAccent)"/>
+
+        <rect x="22" y="334" width="90" height="46" rx="10" fill="#777BB4" fill-opacity=".2"/>
+        <text x="47" y="363" fill="#C4B5FD" font-size="16" font-weight="800" font-family="Arial, sans-serif">PHP</text>
+        <rect x="122" y="334" width="99" height="46" rx="10" fill="#FFFFFF" fill-opacity=".06"/>
+        <text x="139" y="362" fill="#FFFFFF" font-size="12" font-weight="700" font-family="Arial, sans-serif">Symfony 7</text>
+        <rect x="231" y="334" width="99" height="46" rx="10" fill="#FFFFFF" fill-opacity=".06"/>
+        <text x="245" y="355" fill="#FFFFFF" font-size="10" font-weight="700" font-family="Arial, sans-serif">API Platform</text>
+        <text x="275" y="369" fill="#FB7185" font-size="9" font-weight="700" font-family="Arial, sans-serif">v4</text>
+    </g>
+</svg>

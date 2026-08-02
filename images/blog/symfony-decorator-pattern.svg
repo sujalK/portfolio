@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640" role="img" aria-label="Decorator Pattern in a Symfony API Platform project">
+  <defs>
+    <pattern id="decorator-dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e2e2e2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1024" height="640" fill="#faf9f8"/>
+  <rect width="1024" height="640" fill="url(#decorator-dots)" opacity=".7"/>
+
+  <rect x="58" y="82" width="908" height="476" rx="22" fill="#161616"/>
+  <rect x="58" y="82" width="908" height="48" rx="22" fill="#222224"/>
+  <rect x="58" y="108" width="908" height="22" fill="#222224"/>
+  <circle cx="90" cy="106" r="7" fill="#b91c1c"/>
+  <circle cx="114" cy="106" r="7" fill="#6b6b6b"/>
+  <circle cx="138" cy="106" r="7" fill="#3f3f42"/>
+
+  <g font-family="'Plus Jakarta Sans', Inter, sans-serif">
+    <text x="92" y="178" fill="#b8b8be" font-size="16" font-weight="700" letter-spacing="1.4">SYMFONY + API PLATFORM</text>
+    <text x="92" y="220" fill="#ffffff" font-size="30" font-weight="800">Decorator Pattern</text>
+    <text x="92" y="250" fill="#8f8f97" font-size="16">Add behavior without changing the original service</text>
+  </g>
+
+  <g transform="translate(92 300)" font-family="'Plus Jakarta Sans', Inter, sans-serif">
+    <rect width="242" height="126" rx="15" fill="#252528" stroke="#5d5d63" stroke-width="2"/>
+    <text x="121" y="37" text-anchor="middle" fill="#a8a8ae" font-size="13" font-weight="700">DECORATED SERVICE</text>
+    <text x="121" y="72" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">PersistProcessor</text>
+    <text x="121" y="99" text-anchor="middle" fill="#8f8f97" font-size="14">saves the data</text>
+
+    <path d="M262 63h88" fill="none" stroke="#b91c1c" stroke-width="3" stroke-linecap="round"/>
+    <path d="m337 50 16 13-16 13" fill="none" stroke="#b91c1c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="370" width="300" height="126" rx="15" fill="#b91c1c"/>
+    <text x="520" y="37" text-anchor="middle" fill="#fee2e2" font-size="13" font-weight="700">DECORATOR</text>
+    <text x="520" y="72" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="800">UserStateProcessor</text>
+    <text x="520" y="99" text-anchor="middle" fill="#fee2e2" font-size="14">validate / persist / email</text>
+  </g>
+
+  <g transform="translate(782 170)">
+    <path d="M56 16c28 0 46 18 46 42 0 14-7 25-17 33H27C17 83 10 72 10 58c0-24 18-42 46-42z" fill="#f3dfc6"/>
+    <path d="M27 91h58l-29 82z" fill="#d79b61"/>
+    <path d="m35 106 36 36M76 105l-37 38" stroke="#b97942" stroke-width="3" opacity=".6"/>
+    <path d="M37 38c8-13 27-17 41-8" fill="none" stroke="#b91c1c" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="78" cy="31" r="7" fill="#b91c1c"/>
+  </g>
+
+  <g transform="translate(752 460)" font-family="'SFMono-Regular', Menlo, monospace">
+    <rect width="168" height="48" rx="12" fill="#faf9f8"/>
+    <text x="84" y="31" text-anchor="middle" fill="#b91c1c" font-size="16" font-weight="700">wrap + enhance</text>
+  </g>
+</svg>
