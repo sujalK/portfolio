@@ -23,6 +23,7 @@
                 <a href="#education">Developer Education</a>
                 <a href="#services">Services</a>
                 <a href="#work">Work</a>
+                <a href="#open-source">Open Source</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#blog" class="nav-writings">Writings & Posts <i class="fa-solid fa-pen" aria-hidden="true"></i></a>
                 <a href="#team-value" class="nav-highlight">Why me ?</a>
@@ -41,6 +42,7 @@
                 <a href="#education">Developer Education</a>
                 <a href="#services">Services</a>
                 <a href="#work">Work</a>
+                <a href="#open-source">Open Source</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#blog" class="nav-writings">Writings & Posts <i class="fa-solid fa-pen" aria-hidden="true"></i></a>
                 <a href="#team-value" class="nav-highlight">Why me</a>
@@ -704,6 +706,177 @@
         </div>
     </section>
 
+    <!-- section: open-source -->
+    <section id="open-source">
+        <div class="container open-source-container">
+            <!-- div: section-head -->
+            <div class="section-head section-head-split">
+                <h2 class="section-title">
+                    Open source work and
+                    <span class="gradient-text">upstream contributions.</span>
+                </h2>
+                <p class="section-desc">
+                    Libraries I maintain, documentation fixes, and tooling issues
+                    reported while building real SDK projects.
+                </p>
+            </div>
+
+            <div class="open-source-block">
+                <p class="open-source-block-label">Libraries &amp; documentation</p>
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="img-container">
+                            <img src="./images/work/project-3.svg" alt="sujal/validation PHP validation library with reusable Rule classes">
+                        </div>
+                        <div class="txt-container">
+                            <div class="work-copy">
+                                <div class="work-title-row">
+                                    <p class="work-title">sujal/validation</p>
+                                    <a href="https://github.com/sujalK/validation"
+                                        class="work-github-link"
+                                        target="_blank"
+                                        rel="noopener">
+                                        View on GitHub
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                                <p class="work-meta">PHP 8.2+ &middot; MIT &middot; PHPUnit</p>
+                                <p class="work-summary">
+                                    A PHP validation library built around reusable Rule classes,
+                                    immutable schemas, and SOLID boundaries. No framework required.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="img-container open-source-doc-visual">
+                            <span class="open-source-doc-icon" aria-hidden="true"><i class="fa-brands fa-php"></i></span>
+                        </div>
+                        <div class="txt-container">
+                            <div class="work-copy">
+                                <div class="work-title-row">
+                                    <p class="work-title">PHP documentation fix</p>
+                                    <a href="https://github.com/php/doc-en/issues/4466"
+                                        class="work-github-link"
+                                        target="_blank"
+                                        rel="noopener">
+                                        View issue
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                                <p class="work-meta">php/doc-en &middot; Feb 2025 &middot; merged</p>
+                                <p class="work-summary">
+                                    Reported a BCMath example on the PHP 8.4 release docs that failed under
+                                    <code>declare(strict_types=1)</code>. The sample was corrected upstream.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="open-source-block">
+                <p class="open-source-block-label">voxgig/sdkgen</p>
+                <p class="open-source-block-note">
+                    Issues credited while building
+                    <a href="https://github.com/sujalK/searchapi-google-sdk" target="_blank" rel="noopener">searchapi-google-sdk</a>.
+                </p>
+                <div class="open-source-issue-grid">
+                    <article class="open-source-issue">
+                        <div class="open-source-issue-head">
+                            <span class="badge badge-severity badge-severity-high">High</span>
+                            <span class="open-source-issue-id">#236</span>
+                        </div>
+                        <h3 class="open-source-issue-title">Forward documented options through the npm create command</h3>
+                        <p class="open-source-issue-summary">
+                            Documented <code>-d</code>, <code>-o</code>, and <code>-t</code> flags were parsed as language names
+                            instead of reaching the initializer, so target setup failed.
+                        </p>
+                        <a href="https://github.com/voxgig/sdkgen/issues/236"
+                            class="open-source-issue-link"
+                            target="_blank"
+                            rel="noopener">
+                            View on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article class="open-source-issue">
+                        <div class="open-source-issue-head">
+                            <span class="badge badge-severity badge-severity-high">High</span>
+                            <span class="open-source-issue-id">#239</span>
+                        </div>
+                        <h3 class="open-source-issue-title">Include required parameters and API-key placement in generated quickstarts</h3>
+                        <p class="open-source-issue-summary">
+                            Generated PHP README examples omitted required query parameters and where to pass the API key,
+                            so the primary list example was not runnable as written.
+                        </p>
+                        <a href="https://github.com/voxgig/sdkgen/issues/239"
+                            class="open-source-issue-link"
+                            target="_blank"
+                            rel="noopener">
+                            View on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article class="open-source-issue">
+                        <div class="open-source-issue-head">
+                            <span class="badge badge-severity badge-severity-high">High</span>
+                            <span class="open-source-issue-id">#240</span>
+                        </div>
+                        <h3 class="open-source-issue-title">Avoid leaving incomplete projects after scaffold failures</h3>
+                        <p class="open-source-issue-summary">
+                            Failed dependency install or target setup could leave a half-created project with missing
+                            OpenAPI output or an unregistered target that needed manual recovery.
+                        </p>
+                        <a href="https://github.com/voxgig/sdkgen/issues/240"
+                            class="open-source-issue-link"
+                            target="_blank"
+                            rel="noopener">
+                            View on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article class="open-source-issue">
+                        <div class="open-source-issue-head">
+                            <span class="badge badge-severity badge-severity-medium">Medium</span>
+                            <span class="open-source-issue-id">#235</span>
+                        </div>
+                        <h3 class="open-source-issue-title">Generated ownership and publishing metadata should be configurable</h3>
+                        <p class="open-source-issue-summary">
+                            Scaffolded repos kept Voxgig copyright, repository URLs, and publish defaults even when the SDK
+                            belonged to another author or organisation.
+                        </p>
+                        <a href="https://github.com/voxgig/sdkgen/issues/235"
+                            class="open-source-issue-link"
+                            target="_blank"
+                            rel="noopener">
+                            View on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                    <article class="open-source-issue">
+                        <div class="open-source-issue-head">
+                            <span class="badge badge-severity badge-severity-low">Low</span>
+                            <span class="open-source-issue-id">#237</span>
+                        </div>
+                        <h3 class="open-source-issue-title">Make optional-component and deprecation warnings actionable</h3>
+                        <p class="open-source-issue-summary">
+                            Successful generation still emitted deprecation and optional-component warnings without saying
+                            whether output was usable or what to do next.
+                        </p>
+                        <a href="https://github.com/voxgig/sdkgen/issues/237"
+                            class="open-source-issue-link"
+                            target="_blank"
+                            rel="noopener">
+                            View on GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- section: testimonials -->
     <section id="testimonials">
         <div class="container testimonials-container">
@@ -1041,6 +1214,7 @@
                         <a href="#education">Developer Education</a>
                         <a href="#services">Services</a>
                         <a href="#work">Work</a>
+                        <a href="#open-source">Open Source</a>
                         <a href="#testimonials">Testimonials</a>
                         <a href="#blog" class="nav-writings">Writings & Posts <i class="fa-solid fa-pen" aria-hidden="true"></i></a>
                         <a href="#team-value">Why me</a>
@@ -1159,6 +1333,49 @@
                                     rel="noopener"
                                     aria-label="View sujal/validation PHP library on GitHub">
                                     View project on GitHub
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cv-entry">
+                        <div class="cv-entry-head">
+                            <h5>voxgig/sdkgen: upstream tooling issues (credited)</h5>
+                            <span class="cv-entry-date">2026 · searchapi-google-sdk</span>
+                        </div>
+                        <p>
+                            While generating a PHP SDK with sdkgen, I hit gaps in the create command, quickstarts,
+                            scaffold recovery, and generated metadata. I reported them on the upstream repo; the
+                            maintainer opened tracked issues and credited my findings.
+                        </p>
+                        <ul class="cv-links">
+                            <li>
+                                <a href="https://github.com/voxgig/sdkgen/issues/236" target="_blank" rel="noopener">
+                                    #236 · npm create option forwarding (severity: high)
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/voxgig/sdkgen/issues/239" target="_blank" rel="noopener">
+                                    #239 · quickstart required params &amp; API keys (severity: high)
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/voxgig/sdkgen/issues/240" target="_blank" rel="noopener">
+                                    #240 · incomplete projects after scaffold failures (severity: high)
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/voxgig/sdkgen/issues/235" target="_blank" rel="noopener">
+                                    #235 · configurable ownership &amp; publishing metadata (severity: medium)
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/voxgig/sdkgen/issues/237" target="_blank" rel="noopener">
+                                    #237 · actionable optional-component warnings (severity: low)
                                     <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                                 </a>
                             </li>
@@ -1445,6 +1662,12 @@
                         <li>
                             <a href="https://github.com/sujalK" target="_blank" rel="noopener">
                                 GitHub Repository
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sujalk.github.io/portfolio" target="_blank" rel="noopener">
+                                Portfolio Website
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                             </a>
                         </li>

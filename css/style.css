@@ -301,6 +301,7 @@ footer .badge-ghost {
 #education,
 #services,
 #work,
+#open-source,
 #testimonials,
 #blog,
 #team-value,
@@ -312,6 +313,7 @@ footer .badge-ghost {
 #approach,
 #services,
 #work,
+#open-source,
 #pricing,
 #testimonials,
 #blog,
@@ -1746,6 +1748,262 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     font-weight: 300;
     line-height: 1.65;
     color: var(--text-muted);
+}
+
+/* section: open-source */
+#open-source {
+    padding: 5rem 0;
+}
+
+#open-source .open-source-container .open-source-block + .open-source-block {
+    margin-top: 3.25rem;
+}
+
+#open-source .open-source-container .open-source-block-label {
+    margin: 0 0 1.15rem;
+    font-family: var(--jakarta-font);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent-magenta);
+}
+
+#open-source .open-source-container .open-source-block-note {
+    margin: -.65rem 0 1.35rem;
+    max-width: 42rem;
+    font-size: .82rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+#open-source .open-source-container .open-source-block-note a {
+    color: var(--main-neutral-dark-tone);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: .15em;
+}
+
+#open-source .open-source-container .work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+#open-source .open-source-container .work-grid .work-card .img-container {
+    overflow: hidden;
+    border-radius: 16px;
+    aspect-ratio: 4 / 4.6;
+    background: var(--main-neutral-soft);
+}
+
+#open-source .open-source-container .work-grid .work-card .img-container.open-source-doc-visual {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(145deg, #1e293b 0%, #334155 100%);
+}
+
+#open-source .open-source-container .work-grid .work-card .open-source-doc-icon {
+    font-size: 4.5rem;
+    color: #8892b0;
+}
+
+#open-source .open-source-container .work-grid .work-card .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s transform;
+}
+
+#open-source .open-source-container .work-grid .work-card:hover .img-container img {
+    transform: scale(1.05);
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.15rem;
+    padding: 1.1rem .25rem 0 .25rem;
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-copy {
+    min-width: 0;
+    width: 100%;
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-title {
+    font-family: var(--jakarta-font);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    flex-shrink: 0;
+    padding: .5rem .85rem;
+    border: 1px solid var(--border-mid);
+    border-radius: 50px;
+    background: var(--main-neutral-dark-tone);
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: var(--shadow-soft);
+    transition: .25s background-color, .25s border-color, .25s transform, .25s box-shadow;
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-github-link i {
+    font-size: .85rem;
+    transition: .25s transform;
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-github-link:hover {
+    background: var(--accent-magenta);
+    border-color: var(--accent-magenta);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(185, 28, 28, .22);
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-meta {
+    font-size: .78rem;
+    font-weight: 300;
+    color: var(--text-light);
+    padding-top: .2rem;
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-summary {
+    padding-top: .7rem;
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+#open-source .open-source-container .work-grid .work-card .txt-container .work-summary code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .92em;
+}
+
+#open-source .open-source-container .open-source-issue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+}
+
+#open-source .open-source-container .open-source-issue {
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+    padding: 1.25rem 1.35rem;
+    border: 1px solid var(--border-soft);
+    border-radius: 18px;
+    background: var(--main-neutral-white);
+    box-shadow: var(--shadow-soft);
+    transition: .25s border-color, .25s transform, .25s box-shadow;
+}
+
+#open-source .open-source-container .open-source-issue:hover {
+    border-color: var(--border-mid);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, .08);
+}
+
+#open-source .open-source-container .open-source-issue-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+}
+
+#open-source .open-source-container .badge-severity {
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: .28rem .55rem;
+}
+
+#open-source .open-source-container .badge-severity-high {
+    background: rgba(185, 28, 28, .12);
+    color: #b91c1c;
+    border: 1px solid rgba(185, 28, 28, .25);
+}
+
+#open-source .open-source-container .badge-severity-medium {
+    background: rgba(180, 83, 9, .12);
+    color: #b45309;
+    border: 1px solid rgba(180, 83, 9, .25);
+}
+
+#open-source .open-source-container .badge-severity-low {
+    background: rgba(71, 85, 105, .1);
+    color: #475569;
+    border: 1px solid rgba(71, 85, 105, .22);
+}
+
+#open-source .open-source-container .open-source-issue-id {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--text-light);
+}
+
+#open-source .open-source-container .open-source-issue-title {
+    margin: 0;
+    font-family: var(--jakarta-font);
+    font-size: .95rem;
+    font-weight: 700;
+    line-height: 1.45;
+    color: var(--main-neutral-dark-tone);
+}
+
+#open-source .open-source-container .open-source-issue-summary {
+    margin: 0;
+    flex: 1;
+    font-size: .76rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+#open-source .open-source-container .open-source-issue-summary code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .92em;
+}
+
+#open-source .open-source-container .open-source-issue-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    margin-top: .15rem;
+    font-size: .72rem;
+    font-weight: 600;
+    color: var(--main-neutral-dark-tone);
+}
+
+#open-source .open-source-container .open-source-issue-link i {
+    font-size: .68rem;
+    transition: .2s transform;
+}
+
+#open-source .open-source-container .open-source-issue-link:hover {
+    color: var(--accent-magenta);
+}
+
+#open-source .open-source-container .open-source-issue-link:hover i {
+    transform: translate(.12rem, -.12rem);
 }
 
 /* section: pricing */
@@ -4242,6 +4500,10 @@ body.modal-open {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    #open-source .open-source-container .open-source-issue-grid {
+        grid-template-columns: 1fr;
+    }
+
     #pricing .pricing-container .pricing-grid {
         grid-template-columns: 1fr;
     }
@@ -4411,6 +4673,11 @@ body.modal-open {
     }
 
     #work .work-container .work-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #open-source .open-source-container .work-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
