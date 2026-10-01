@@ -4,6 +4,15 @@
 
 const linkedInPosts = [
     {
+        title: 'Creating a PHP SDK: API Request to Friendly Developer Response',
+        meta: 'PHP · SDK · Sep 2026',
+        url: 'https://www.linkedin.com/pulse/creating-php-sdk-api-request-friendly-developer-sujal-khatiwada-szihc/',
+        image: './images/blog/php-sdk-article.svg',
+        imageAlt: 'PHP SDK flow from ApiClient search call to structured ApiData objects',
+        badge: 'Article',
+        isArticle: true
+    },
+    {
         title: 'How modern libraries and frameworks use the Builder Pattern under the hood',
         meta: 'Design patterns · LinkedIn post',
         url: 'https://www.linkedin.com/posts/sujal-k-0b3b04126_ever-wondered-how-modern-libraries-or-frameworks-activity-7344085766219681793-n4Au?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB8hv4cBsjMQg7RY5VwddYAHhd6MHawxW-U',
@@ -91,6 +100,20 @@ const linkedInPosts = [
 
 const LIST_LIMIT = 4;
 
+function linkedInFormatLabel(post) {
+    if (post.isArticle) {
+        return 'LinkedIn article';
+    }
+    if (post.isVideo) {
+        return 'Video Post';
+    }
+    return 'Text Post';
+}
+
+function linkedInOpenLabel(post) {
+    return post.isArticle ? 'Open LinkedIn article' : 'Open LinkedIn post';
+}
+
 function escapeHtml(value) {
     return String(value)
         .replace(/&/g, '&amp;')
@@ -102,7 +125,7 @@ function escapeHtml(value) {
 
 function renderMetaLine(post) {
     const meta = escapeHtml(post.meta);
-    const format = post.isVideo ? 'Video Post' : 'Text Post';
+    const format = linkedInFormatLabel(post);
     return `${meta} <span class="blog-meta-format">· ${format}</span>`;
 }
 
@@ -134,7 +157,7 @@ function renderFeaturedCard(post, postIndex) {
                 <p class="blog-meta">${renderMetaLine(post)}</p>
                 <p class="blog-title">${escapeHtml(post.title)}</p>
                 <span class="blog-read-more">
-                    Open LinkedIn post
+                    ${linkedInOpenLabel(post)}
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </span>
             </div>
@@ -156,7 +179,7 @@ function renderListItem(post, postIndex) {
                 <p class="blog-meta">${renderMetaLine(post)}</p>
                 <p class="blog-title">${escapeHtml(post.title)}</p>
                 <span class="blog-read-more blog-read-more-inline">
-                    Open LinkedIn post
+                    ${linkedInOpenLabel(post)}
                     <i class="fa-solid fa-arrow-right"></i>
                 </span>
             </div>
@@ -182,7 +205,7 @@ function renderMoreCard(post, index) {
                 <p class="blog-meta">${renderMetaLine(post)}</p>
                 <p class="blog-title">${escapeHtml(post.title)}</p>
                 <span class="blog-read-more blog-read-more-inline">
-                    Open LinkedIn post
+                    ${linkedInOpenLabel(post)}
                     <i class="fa-solid fa-arrow-right"></i>
                 </span>
             </div>
@@ -243,8 +266,9 @@ function setupWritingPreview() {
         modalImage.src = post.image;
         modalImage.alt = post.imageAlt || post.title;
         modalTitle.textContent = post.title;
-        modalMeta.textContent = `${post.meta} · ${post.isVideo ? 'Video Post' : 'Text Post'}`;
+        modalMeta.textContent = `${post.meta} · ${linkedInFormatLabel(post)}`;
         modalLink.href = post.url;
+        modalLink.innerHTML = `${linkedInOpenLabel(post)} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>`;
         modal.classList.add('is-open');
         modal.inert = false;
         document.body.classList.add('writing-preview-open');

@@ -2335,19 +2335,21 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     position: relative;
     overflow: hidden;
     border-radius: 16px;
-    aspect-ratio: 5 / 4;
+    aspect-ratio: 16 / 10;
     background: var(--main-neutral-soft);
 }
 
 #blog .blog-container .blog-grid .blog-featured .img-container img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    display: block;
     transition: .5s transform;
 }
 
 #blog .blog-container .blog-grid .blog-featured:hover .img-container img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 #blog .blog-container .blog-grid .blog-featured .img-container .chip {
@@ -2386,7 +2388,8 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     position: relative;
     flex: 0 0 12rem;
     width: 12rem;
-    height: 9rem;
+    aspect-ratio: 16 / 10;
+    height: auto;
     border-radius: 16px;
     overflow: hidden;
     background: var(--main-neutral-soft);
@@ -2395,13 +2398,14 @@ header .mobile-navbar .mobile-navbar-container a.btn {
 #blog .blog-container .blog-grid .blog-list .blog-item .img-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     display: block;
     transition: .35s transform;
 }
 
 #blog .blog-container .blog-grid .blog-list .blog-item:hover .img-container img {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 #blog .blog-container .blog-grid .blog-list .blog-item .txt-container {
@@ -2628,13 +2632,14 @@ header .mobile-navbar .mobile-navbar-container a.btn {
 #blog .writing-card .img-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     display: block;
     transition: .35s transform;
 }
 
 #blog .writing-card:hover .img-container img {
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 #blog .writing-card .img-container .chip {
@@ -4568,7 +4573,7 @@ body.modal-open {
     #blog .blog-container .blog-grid .blog-list .blog-item .img-container {
         flex-basis: 8.5rem;
         width: 8.5rem;
-        height: 6.4rem;
+        height: auto;
     }
 
     footer .footer-container .footer-top {
