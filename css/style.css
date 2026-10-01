@@ -452,6 +452,66 @@ header .header-container .navbar a.nav-highlight.is-active {
     header .header-container .navbar a.nav-highlight {
         animation: none;
     }
+
+    header .header-container .navbar a.nav-open-source {
+        animation: none;
+    }
+}
+
+/* open source nav: slower, softer focus than "Why me" */
+header .header-container .navbar a.nav-open-source {
+    display: inline-flex;
+    align-items: center;
+    padding: .35rem .75rem;
+    border: 1px solid rgba(30, 64, 175, .35);
+    border-radius: 999px;
+    background: rgba(30, 64, 175, .04);
+    color: #1e3a8a;
+    font-weight: 600;
+    line-height: 1;
+    animation: nav-open-source-focus 4.5s ease-in-out infinite;
+}
+
+header .header-container .navbar a.nav-open-source:hover {
+    background: #1e40af;
+    border-color: #1e40af;
+    color: #fff;
+    animation: none;
+    box-shadow: 0 6px 18px rgba(30, 64, 175, .22);
+}
+
+header .header-container .navbar a.nav-open-source.is-active {
+    animation: none;
+    background: rgba(30, 64, 175, .12);
+    border: 1px solid #1e40af;
+    color: #1e3a8a;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+@keyframes nav-open-source-focus {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(30, 64, 175, .28);
+        border-color: rgba(30, 64, 175, .35);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(30, 64, 175, 0);
+        border-color: rgba(30, 64, 175, .55);
+    }
+}
+
+header .mobile-navbar .mobile-navbar-container a.nav-open-source {
+    color: #1e40af;
+    font-weight: 700;
+    border-left: 3px solid rgba(30, 64, 175, .35);
+    padding-left: .65rem;
+}
+
+header .mobile-navbar .mobile-navbar-container a.nav-open-source.is-active {
+    color: #1e40af;
+    border-left-color: #1e40af;
+    font-weight: 700;
 }
 
 header .mobile-navbar .mobile-navbar-container a.nav-highlight {
@@ -1762,6 +1822,10 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     align-items: start;
 }
 
+#open-source .open-source-container .open-source-subblock + .open-source-subblock {
+    margin-top: 2.5rem;
+}
+
 #open-source .open-source-container .open-source-block-label {
     margin: 0 0 1.15rem;
     font-family: var(--jakarta-font);
@@ -1820,12 +1884,13 @@ header .mobile-navbar .mobile-navbar-container a.btn {
 }
 
 #open-source .open-source-container .badge-severity {
-    font-size: .62rem;
+    font-size: .58rem;
     font-weight: 700;
-    letter-spacing: .06em;
-    text-transform: uppercase;
+    letter-spacing: .04em;
+    text-transform: none;
     border-radius: 999px;
-    padding: .28rem .55rem;
+    padding: .32rem .6rem;
+    white-space: nowrap;
 }
 
 #open-source .open-source-container .badge-severity-high {
@@ -1883,6 +1948,14 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     color: var(--main-neutral-dark-tone);
 }
 
+#open-source .open-source-container .open-source-issue-kicker {
+    margin: -.25rem 0 0;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    color: var(--text-light);
+}
+
 #open-source .open-source-container .open-source-issue-summary {
     margin: 0;
     flex: 1;
@@ -1897,27 +1970,43 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     font-size: .92em;
 }
 
-#open-source .open-source-container .open-source-issue-link {
+#open-source .open-source-container .open-source-github-btn {
     display: inline-flex;
     align-items: center;
-    gap: .35rem;
-    margin-top: .15rem;
+    align-self: flex-start;
+    gap: .45rem;
+    margin-top: .35rem;
+    padding: .55rem .95rem;
+    border: 1px solid var(--border-mid);
+    border-radius: 50px;
+    background: var(--main-neutral-dark-tone);
+    color: #fff;
     font-size: .72rem;
     font-weight: 600;
-    color: var(--main-neutral-dark-tone);
+    white-space: nowrap;
+    box-shadow: var(--shadow-soft);
+    transition: .25s background-color, .25s border-color, .25s transform, .25s box-shadow;
 }
 
-#open-source .open-source-container .open-source-issue-link i {
-    font-size: .68rem;
-    transition: .2s transform;
+#open-source .open-source-container .open-source-github-btn i {
+    font-size: .85rem;
+    transition: .25s transform;
 }
 
-#open-source .open-source-container .open-source-issue-link:hover {
-    color: var(--accent-magenta);
+#open-source .open-source-container .open-source-github-btn:hover {
+    background: var(--accent-magenta);
+    border-color: var(--accent-magenta);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(185, 28, 28, .22);
 }
 
-#open-source .open-source-container .open-source-issue-link:hover i {
-    transform: translate(.12rem, -.12rem);
+#open-source .open-source-container .open-source-github-btn:hover i {
+    transform: scale(1.08);
+}
+
+#open-source .open-source-container .open-source-github-btn:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-soft);
 }
 
 /* section: pricing */
@@ -4296,6 +4385,55 @@ body.modal-open {
         width: 25px;
         line-height: 25px;
         font-size: .62rem;
+    }
+}
+
+/* desktop nav has many items; tighten type and spacing before the bar wraps */
+@media screen and (max-width: 1165px) {
+    header .header-container {
+        gap: .85rem;
+        padding-top: .85rem;
+        padding-bottom: .85rem;
+    }
+
+    header .header-container .logo-wrapper img {
+        width: 32px;
+    }
+
+    header .header-container .logo-wrapper .logo-text {
+        font-size: .95rem;
+    }
+
+    header .header-container .navbar {
+        gap: 9px;
+    }
+
+    header .header-container .navbar a {
+        font-size: 12px;
+    }
+
+    header .header-container .navbar a.nav-writings i {
+        font-size: .65em;
+    }
+
+    header .header-container .navbar a.nav-highlight {
+        padding: .32rem .62rem;
+        font-size: 12px;
+    }
+
+    header .header-container .navbar a.nav-open-source {
+        padding: .28rem .55rem;
+        font-size: 12px;
+    }
+
+    header .header-container .header-actions {
+        gap: .75rem;
+        flex-shrink: 0;
+    }
+
+    header .header-container .header-actions .btn {
+        padding: .55rem 1.05rem;
+        font-size: .78rem;
     }
 }
 
