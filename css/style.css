@@ -1755,8 +1755,11 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     padding: 5rem 0;
 }
 
-#open-source .open-source-container .open-source-block + .open-source-block {
-    margin-top: 3.25rem;
+#open-source .open-source-container .open-source-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 2.5rem 3rem;
+    align-items: start;
 }
 
 #open-source .open-source-container .open-source-block-label {
@@ -1785,119 +1788,9 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     text-underline-offset: .15em;
 }
 
-#open-source .open-source-container .work-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-#open-source .open-source-container .work-grid .work-card .img-container {
-    overflow: hidden;
-    border-radius: 16px;
-    aspect-ratio: 4 / 4.6;
-    background: var(--main-neutral-soft);
-}
-
-#open-source .open-source-container .work-grid .work-card .img-container.open-source-doc-visual {
-    display: grid;
-    place-items: center;
-    background: linear-gradient(145deg, #1e293b 0%, #334155 100%);
-}
-
-#open-source .open-source-container .work-grid .work-card .open-source-doc-icon {
-    font-size: 4.5rem;
-    color: #8892b0;
-}
-
-#open-source .open-source-container .work-grid .work-card .img-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: .5s transform;
-}
-
-#open-source .open-source-container .work-grid .work-card:hover .img-container img {
-    transform: scale(1.05);
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container {
+#open-source .open-source-container .open-source-issue-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1.15rem;
-    padding: 1.1rem .25rem 0 .25rem;
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-copy {
-    min-width: 0;
-    width: 100%;
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-title-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: .75rem;
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-title {
-    font-family: var(--jakarta-font);
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-github-link {
-    display: inline-flex;
-    align-items: center;
-    gap: .4rem;
-    flex-shrink: 0;
-    padding: .5rem .85rem;
-    border: 1px solid var(--border-mid);
-    border-radius: 50px;
-    background: var(--main-neutral-dark-tone);
-    color: #fff;
-    font-size: .7rem;
-    font-weight: 600;
-    white-space: nowrap;
-    box-shadow: var(--shadow-soft);
-    transition: .25s background-color, .25s border-color, .25s transform, .25s box-shadow;
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-github-link i {
-    font-size: .85rem;
-    transition: .25s transform;
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-github-link:hover {
-    background: var(--accent-magenta);
-    border-color: var(--accent-magenta);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(185, 28, 28, .22);
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-meta {
-    font-size: .78rem;
-    font-weight: 300;
-    color: var(--text-light);
-    padding-top: .2rem;
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-summary {
-    padding-top: .7rem;
-    font-size: .75rem;
-    font-weight: 300;
-    line-height: 1.65;
-    color: var(--text-muted);
-}
-
-#open-source .open-source-container .work-grid .work-card .txt-container .work-summary code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: .92em;
-}
-
-#open-source .open-source-container .open-source-issue-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.15rem;
 }
 
@@ -1951,6 +1844,27 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     background: rgba(71, 85, 105, .1);
     color: #475569;
     border: 1px solid rgba(71, 85, 105, .22);
+}
+
+#open-source .open-source-container .badge-kind {
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: .28rem .55rem;
+}
+
+#open-source .open-source-container .badge-kind-library {
+    background: rgba(30, 64, 175, .1);
+    color: #1e40af;
+    border: 1px solid rgba(30, 64, 175, .22);
+}
+
+#open-source .open-source-container .badge-kind-docs {
+    background: rgba(15, 118, 110, .1);
+    color: #0f766e;
+    border: 1px solid rgba(15, 118, 110, .22);
 }
 
 #open-source .open-source-container .open-source-issue-id {
@@ -4500,8 +4414,9 @@ body.modal-open {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #open-source .open-source-container .open-source-issue-grid {
+    #open-source .open-source-container .open-source-split {
         grid-template-columns: 1fr;
+        gap: 3rem;
     }
 
     #pricing .pricing-container .pricing-grid {
@@ -4673,11 +4588,6 @@ body.modal-open {
     }
 
     #work .work-container .work-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    #open-source .open-source-container .work-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
