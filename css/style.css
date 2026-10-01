@@ -1757,7 +1757,7 @@ header .mobile-navbar .mobile-navbar-container a.btn {
 
 #open-source .open-source-container .open-source-split {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
     gap: 2.5rem 3rem;
     align-items: start;
 }
