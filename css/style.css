@@ -303,6 +303,7 @@ footer .badge-ghost {
 #work,
 #open-source,
 #testimonials,
+#articles,
 #blog,
 #team-value,
 #contact {
@@ -316,6 +317,7 @@ footer .badge-ghost {
 #open-source,
 #pricing,
 #testimonials,
+#articles,
 #blog,
 #team-value,
 #contact {
@@ -527,6 +529,8 @@ header .header-container .header-actions {
 
 header .header-container .header-actions .btn {
     padding: .7rem 1.35rem;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 header .header-container .hamburger-menu {
@@ -2307,6 +2311,124 @@ header .mobile-navbar .mobile-navbar-container a.btn {
     height: auto;
     margin-top: 1.35rem;
     opacity: .72;
+}
+
+/* section: articles */
+#articles {
+    padding: 5rem 0;
+}
+
+#articles .articles-container .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+#articles .articles-container .article-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .06);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .05);
+    text-decoration: none;
+    color: inherit;
+    transition: .25s box-shadow, .25s transform, .25s border-color;
+}
+
+#articles .articles-container .article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .08);
+    border-color: rgba(185, 28, 28, .2);
+}
+
+#articles .articles-container .article-card .img-container {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: var(--main-neutral-soft);
+}
+
+#articles .articles-container .article-card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    transition: .35s transform;
+}
+
+#articles .articles-container .article-card:hover .img-container img {
+    transform: scale(1.02);
+}
+
+#articles .articles-container .article-card .img-container .chip {
+    top: 1rem;
+    left: 1rem;
+}
+
+#articles .articles-container .article-card .txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 1.25rem 1.25rem 1.4rem;
+}
+
+#articles .articles-container .article-card .blog-meta {
+    font-size: .74rem;
+    font-weight: 500;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    padding-bottom: .6rem;
+}
+
+#articles .articles-container .article-card .blog-meta-format {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+#articles .articles-container .article-card .blog-title {
+    font-family: var(--jakarta-font);
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+}
+
+#articles .articles-container .article-card .article-summary {
+    margin: .75rem 0 0;
+    font-size: .82rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+#articles .articles-container .article-card .blog-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    margin-top: 1rem;
+    padding: .7rem 1.25rem;
+    border-radius: 50px;
+    background: var(--main-neutral-dark-tone);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    transition: .25s background-color, .25s transform;
+}
+
+#articles .articles-container .article-card .blog-read-more i {
+    font-size: .6rem;
+}
+
+#articles .articles-container .article-card:hover .blog-read-more {
+    background: #2e2e2e;
+    transform: translateY(-2px);
 }
 
 /* section: blog */
@@ -4394,7 +4516,7 @@ body.modal-open {
 }
 
 /* desktop nav has many items; tighten type and spacing before the bar wraps */
-@media screen and (max-width: 1165px) {
+@media screen and (max-width: 1320px) {
     header .header-container {
         gap: .85rem;
         padding-top: .85rem;
@@ -4410,7 +4532,7 @@ body.modal-open {
     }
 
     header .header-container .navbar {
-        gap: 9px;
+        gap: 7px;
     }
 
     header .header-container .navbar a {
@@ -4566,6 +4688,7 @@ body.modal-open {
         grid-template-columns: 1fr;
     }
 
+    #articles .articles-container .articles-grid,
     #blog .blog-container .blog-grid {
         grid-template-columns: 1fr;
     }

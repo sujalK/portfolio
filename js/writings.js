@@ -4,15 +4,6 @@
 
 const linkedInPosts = [
     {
-        title: 'Creating a PHP SDK: API Request to Friendly Developer Response',
-        meta: 'PHP · SDK · Sep 2026',
-        url: 'https://www.linkedin.com/pulse/creating-php-sdk-api-request-friendly-developer-sujal-khatiwada-szihc/',
-        image: './images/blog/php-sdk-article.svg',
-        imageAlt: 'PHP SDK flow from ApiClient search call to structured ApiData objects',
-        badge: 'Article',
-        isArticle: true
-    },
-    {
         title: 'How modern libraries and frameworks use the Builder Pattern under the hood',
         meta: 'Design patterns · LinkedIn post',
         url: 'https://www.linkedin.com/posts/sujal-k-0b3b04126_ever-wondered-how-modern-libraries-or-frameworks-activity-7344085766219681793-n4Au?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB8hv4cBsjMQg7RY5VwddYAHhd6MHawxW-U',

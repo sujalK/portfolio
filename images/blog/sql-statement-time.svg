@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640" width="1024" height="640" role="img" aria-label="Oracle, MySQL, and PostgreSQL statement timing views">
+  <defs>
+    <pattern id="sql-dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e2e2e2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1024" height="640" fill="#faf9f8"/>
+  <rect width="1024" height="640" fill="url(#sql-dots)" opacity=".7"/>
+
+  <g fill="none" stroke="#b91c1c" stroke-width="2.5" stroke-linecap="round" opacity=".45">
+    <path d="M168 68h36M186 50v36"/>
+  </g>
+  <circle cx="928" cy="88" r="30" fill="none" stroke="#c9c9c9" stroke-width="2" stroke-dasharray="5 6"/>
+
+  <text x="72" y="118" fill="#6b7280" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1.4">MEASURE, THEN CHANGE</text>
+  <text x="72" y="156" fill="#111827" font-family="system-ui, sans-serif" font-size="28" font-weight="800">Statement time, already stored</text>
+
+  <g font-family="system-ui, sans-serif">
+    <g transform="translate(72, 196)">
+      <rect width="280" height="250" rx="18" fill="#161616"/>
+      <rect width="280" height="46" rx="18" fill="#222224"/>
+      <rect y="28" width="280" height="18" fill="#222224"/>
+      <circle cx="28" cy="24" r="6" fill="#b91c1c"/>
+      <circle cx="48" cy="24" r="6" fill="#6b6b6b"/>
+      <circle cx="68" cy="24" r="6" fill="#3f3f42"/>
+      <text x="24" y="78" fill="#fecaca" font-size="12" font-weight="700" letter-spacing="1.2">ORACLE</text>
+      <text x="24" y="112" fill="#ffffff" font-size="20" font-weight="800">v$sql</text>
+      <text x="24" y="148" fill="#9ca3af" font-size="14">elapsed_time</text>
+      <text x="24" y="176" fill="#f9fafb" font-size="14">2.500 sec total</text>
+      <text x="24" y="214" fill="#6b7280" font-size="13">microseconds / executions</text>
+    </g>
+
+    <g transform="translate(372, 196)">
+      <rect width="280" height="250" rx="18" fill="#161616"/>
+      <rect width="280" height="46" rx="18" fill="#222224"/>
+      <rect y="28" width="280" height="18" fill="#222224"/>
+      <circle cx="28" cy="24" r="6" fill="#b91c1c"/>
+      <circle cx="48" cy="24" r="6" fill="#6b6b6b"/>
+      <circle cx="68" cy="24" r="6" fill="#3f3f42"/>
+      <text x="24" y="78" fill="#fecaca" font-size="12" font-weight="700" letter-spacing="1.2">MYSQL</text>
+      <text x="24" y="112" fill="#ffffff" font-size="20" font-weight="800">events_statements</text>
+      <text x="24" y="148" fill="#9ca3af" font-size="14">timer_wait</text>
+      <text x="24" y="176" fill="#f9fafb" font-size="14">rows_examined = 3</text>
+      <text x="24" y="214" fill="#6b7280" font-size="13">picoseconds, no_index_used</text>
+    </g>
+
+    <g transform="translate(672, 196)">
+      <rect width="280" height="250" rx="18" fill="#161616"/>
+      <rect width="280" height="46" rx="18" fill="#222224"/>
+      <rect y="28" width="280" height="18" fill="#222224"/>
+      <circle cx="28" cy="24" r="6" fill="#b91c1c"/>
+      <circle cx="48" cy="24" r="6" fill="#6b6b6b"/>
+      <circle cx="68" cy="24" r="6" fill="#3f3f42"/>
+      <text x="24" y="78" fill="#fecaca" font-size="12" font-weight="700" letter-spacing="1.2">POSTGRESQL</text>
+      <text x="24" y="112" fill="#ffffff" font-size="20" font-weight="800">pg_stat_activity</text>
+      <text x="24" y="148" fill="#9ca3af" font-size="14">log_min_duration</text>
+      <text x="24" y="176" fill="#f9fafb" font-size="14">2000 ms threshold</text>
+      <text x="24" y="214" fill="#6b7280" font-size="13">idx_scan on the index</text>
+    </g>
+  </g>
+
+  <g transform="translate(72, 478)" font-family="system-ui, sans-serif">
+    <rect width="880" height="78" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+    <text x="28" y="32" fill="#b91c1c" font-size="13" font-weight="700" letter-spacing="1">THEN COMPARE</text>
+    <text x="28" y="56" fill="#374151" font-size="16" font-weight="600">Text, execution count, total time, and rows or disk reads. Change the statement after that.</text>
+  </g>
+</svg>
