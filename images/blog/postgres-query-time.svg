@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640" width="1024" height="640" role="img" aria-label="PostgreSQL query timed in milliseconds and seconds">
+  <defs>
+    <pattern id="pg-dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e2e2e2"/>
+    </pattern>
+  </defs>
+
+  <rect width="1024" height="640" fill="#faf9f8"/>
+  <rect width="1024" height="640" fill="url(#pg-dots)" opacity=".7"/>
+
+  <g fill="none" stroke="#b91c1c" stroke-width="2.5" stroke-linecap="round" opacity=".45">
+    <path d="M168 68h36M186 50v36"/>
+  </g>
+  <circle cx="928" cy="88" r="30" fill="none" stroke="#c9c9c9" stroke-width="2" stroke-dasharray="5 6"/>
+
+  <text x="72" y="118" fill="#6b7280" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1.4">POSTGRESQL 18</text>
+  <text x="72" y="156" fill="#111827" font-family="system-ui, sans-serif" font-size="28" font-weight="800">One query, two units of time</text>
+
+  <g font-family="system-ui, sans-serif">
+    <g transform="translate(72, 196)">
+      <rect width="420" height="250" rx="18" fill="#161616"/>
+      <rect width="420" height="46" rx="18" fill="#222224"/>
+      <rect y="28" width="420" height="18" fill="#222224"/>
+      <circle cx="28" cy="24" r="6" fill="#b91c1c"/>
+      <circle cx="48" cy="24" r="6" fill="#6b6b6b"/>
+      <circle cx="68" cy="24" r="6" fill="#3f3f42"/>
+      <text x="24" y="86" fill="#fecaca" font-size="12" font-weight="700" letter-spacing="1.1">LOG  /  ONE RUN</text>
+      <text x="24" y="128" fill="#ffffff" font-size="22" font-weight="800">duration: 4.094 ms</text>
+      <text x="24" y="168" fill="#9ca3af" font-size="15">item-5000 lookup</text>
+      <text x="24" y="204" fill="#6b7280" font-size="14">log_min_duration_statement = 0</text>
+    </g>
+
+    <g transform="translate(532, 196)">
+      <rect width="420" height="250" rx="18" fill="#161616"/>
+      <rect width="420" height="46" rx="18" fill="#222224"/>
+      <rect y="28" width="420" height="18" fill="#222224"/>
+      <circle cx="28" cy="24" r="6" fill="#b91c1c"/>
+      <circle cx="48" cy="24" r="6" fill="#6b6b6b"/>
+      <circle cx="68" cy="24" r="6" fill="#3f3f42"/>
+      <text x="24" y="86" fill="#fecaca" font-size="12" font-weight="700" letter-spacing="1.1">pg_stat_statements</text>
+      <text x="24" y="128" fill="#ffffff" font-size="22" font-weight="800">4.09 ms  =  0.0041 sec</text>
+      <text x="24" y="168" fill="#9ca3af" font-size="15">pg_sleep(2)  =  2.000 sec</text>
+      <text x="24" y="204" fill="#6b7280" font-size="14">mean_exec_time / 1000</text>
+    </g>
+  </g>
+
+  <g transform="translate(72, 478)" font-family="system-ui, sans-serif">
+    <rect width="880" height="78" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+    <text x="28" y="32" fill="#b91c1c" font-size="13" font-weight="700" letter-spacing="1">READ IT BACK</text>
+    <text x="28" y="56" fill="#374151" font-size="16" font-weight="600">The log is one run. The view is the average since the counters were reset.</text>
+  </g>
+</svg>
